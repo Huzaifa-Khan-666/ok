@@ -1,0 +1,204 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="projects-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Projects</h2>
+            <p>A showcase of my work in cybersecurity, penetration testing, and vulnerability research.</p>
+        </div>
+        
+        <div class="projects-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="pentest">Penetration Testing</button>
+            <button class="filter-btn" data-filter="vuln">Vulnerability Research</button>
+            <button class="filter-btn" data-filter="security">Security Tools</button>
+            <button class="filter-btn" data-filter="bugbounty">Bug Bounty</button>
+        </div>
+        
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card pentest security">
+                <div class="project-image" data-encrypt="ENCRYPTED_DATA">
+                    <img src="{{ url_for('static', filename='images/project1.svg') }}" alt="Banking Security Project">
+                </div>
+                <div class="project-content">
+                    <h3>Banking Sector Security Assessment</h3>
+                    <p>Led a comprehensive security assessment for a major financial institution, identifying critical vulnerabilities in their online banking platform.</p>
+                    <p><strong>Challenges:</strong> Complex legacy systems, strict regulatory requirements, minimal testing window to avoid service disruption.</p>
+                    <p><strong>Solutions:</strong> Developed custom testing methodologies, leveraged automated scanning with manual verification, and provided detailed remediation guidance.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Web Security</span>
+                        <span class="project-tag">API Testing</span>
+                        <span class="project-tag">Authentication Bypass</span>
+                        <span class="project-tag">PCI-DSS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> View Case Study</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card vuln bugbounty">
+                <div class="project-image" data-encrypt="ENCRYPTED_DATA">
+                    <img src="{{ url_for('static', filename='images/case-study.svg') }}" alt="Zero Day Vulnerability">
+                </div>
+                <div class="project-content">
+                    <h3>Critical OAuth2 Implementation Vulnerability</h3>
+                    <p>Discovered a zero-day vulnerability in a widely-used OAuth2 implementation that could lead to account takeover across multiple platforms.</p>
+                    <p><strong>Challenges:</strong> Complex authentication flow, difficult to reproduce consistently, required deep understanding of the OAuth2 protocol.</p>
+                    <p><strong>Solutions:</strong> Created a reliable proof-of-concept exploit, developed a comprehensive technical report, and worked with the vendor on proper remediation.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Zero-Day</span>
+                        <span class="project-tag">Authentication</span>
+                        <span class="project-tag">OAuth2</span>
+                        <span class="project-tag">CVE-2023-1234</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card security">
+                <div class="project-image" data-encrypt="ENCRYPTED_DATA">
+                    <img src="{{ url_for('static', filename='images/project1.svg') }}" alt="Security Tool">
+                </div>
+                <div class="project-content">
+                    <h3>Automated API Security Scanner</h3>
+                    <p>Developed an open-source tool for automatically detecting security vulnerabilities in RESTful and GraphQL APIs.</p>
+                    <p><strong>Challenges:</strong> Handling various authentication methods, minimizing false positives, adapting to different API structures.</p>
+                    <p><strong>Solutions:</strong> Implemented machine learning for pattern recognition, created extensive test case library, and designed comprehensive reporting system.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">API Security</span>
+                        <span class="project-tag">OWASP API Top 10</span>
+                        <span class="project-tag">Open Source</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> GitHub Repository</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card pentest">
+                <div class="project-image" data-encrypt="ENCRYPTED_DATA">
+                    <img src="{{ url_for('static', filename='images/case-study.svg') }}" alt="Red Team Operation">
+                </div>
+                <div class="project-content">
+                    <h3>Advanced Red Team Operation</h3>
+                    <p>Conducted a comprehensive red team assessment for a Fortune 500 company, successfully breaching their perimeter and achieving domain admin access.</p>
+                    <p><strong>Challenges:</strong> Advanced security controls, EDR solutions, 24/7 SOC monitoring, network segmentation.</p>
+                    <p><strong>Solutions:</strong> Utilized custom OPSEC-safe tools, implemented living-off-the-land techniques, and leveraged social engineering to establish initial access.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Red Team</span>
+                        <span class="project-tag">Advanced Persistence</span>
+                        <span class="project-tag">Social Engineering</span>
+                        <span class="project-tag">Lateral Movement</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> View Case Study</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project-card bugbounty vuln">
+                <div class="project-image" data-encrypt="ENCRYPTED_DATA">
+                    <img src="{{ url_for('static', filename='images/project1.svg') }}" alt="Bug Bounty Project">
+                </div>
+                <div class="project-content">
+                    <h3>E-commerce Platform Critical Vulnerability</h3>
+                    <p>Discovered and responsibly disclosed a critical payment bypass vulnerability in a major e-commerce platform affecting millions of users worldwide.</p>
+                    <p><strong>Challenges:</strong> Complex payment flow, multiple third-party integrations, sophisticated fraud detection systems.</p>
+                    <p><strong>Solutions:</strong> Carefully analyzed transaction processing logic, identified race condition vulnerability, and created a non-destructive proof of concept.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Bug Bounty</span>
+                        <span class="project-tag">Payment Security</span>
+                        <span class="project-tag">Race Condition</span>
+                        <span class="project-tag">Responsible Disclosure</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Project 6 -->
+            <div class="project-card security">
+                <div class="project-image" data-encrypt="ENCRYPTED_DATA">
+                    <img src="{{ url_for('static', filename='images/case-study.svg') }}" alt="Security Framework">
+                </div>
+                <div class="project-content">
+                    <h3>Secure SDLC Implementation</h3>
+                    <p>Designed and implemented a comprehensive Secure Software Development Lifecycle for a healthcare technology company handling sensitive patient data.</p>
+                    <p><strong>Challenges:</strong> Integration with existing development processes, training development teams, meeting HIPAA compliance requirements.</p>
+                    <p><strong>Solutions:</strong> Created automated security testing pipelines, developed secure coding guidelines, and implemented security champions program.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Secure SDLC</span>
+                        <span class="project-tag">DevSecOps</span>
+                        <span class="project-tag">HIPAA</span>
+                        <span class="project-tag">Compliance</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="case-study-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Featured Case Study</h2>
+            <p>An in-depth look at one of my most impactful security assessments.</p>
+        </div>
+        <div class="case-study-content">
+            <div class="case-study-image" data-encrypt="ENCRYPTED_DATA">
+                <img src="{{ url_for('static', filename='images/case-study.svg') }}" alt="Case Study">
+            </div>
+            <div class="case-study-text">
+                <h3>Critical Infrastructure Security Assessment</h3>
+                <p>A utility company responsible for managing critical infrastructure needed a comprehensive security assessment to protect against emerging cyber threats.</p>
+                
+                <div class="case-study-details">
+                    <div class="case-study-section">
+                        <h4>Challenge</h4>
+                        <p>The client operated industrial control systems (ICS) and SCADA environments that were increasingly connected to corporate networks. Legacy systems with minimal security controls were exposed to potential cyber attacks that could impact essential services.</p>
+                    </div>
+                    
+                    <div class="case-study-section">
+                        <h4>Solution</h4>
+                        <p>I conducted a multi-faceted security assessment including:</p>
+                        <ul>
+                            <li>Network architecture review and segmentation testing</li>
+                            <li>ICS/SCADA systems security assessment in a test environment</li>
+                            <li>Secure remote access evaluation for third-party vendors</li>
+                            <li>Custom exploit development for identified vulnerabilities</li>
+                            <li>Incident response capabilities assessment</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="case-study-section">
+                        <h4>Results</h4>
+                        <ul>
+                            <li>Identified 3 critical vulnerabilities that could lead to operational technology compromise</li>
+                            <li>Discovered insecure vendor access mechanisms that bypassed network security controls</li>
+                            <li>Developed a prioritized remediation roadmap based on risk assessment</li>
+                            <li>Created custom security monitoring signatures for OT network traffic</li>
+                            <li>Implemented zero-trust architecture for OT/IT boundary protection</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <a href="#" class="btn">Read Full Case Study</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

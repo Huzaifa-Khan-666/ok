@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="contact-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+            <p>Let's discuss how I can help with your DevOps and cloud infrastructure needs.</p>
+        </div>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>I'm interested in DevOps opportunities where I can contribute, learn, and grow. Don't hesitate to contact me using the form or through my social profiles.</p>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>San Francisco Bay Area, CA</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>contact@devops-engineer.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>(123) 456-7890</p>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <h4>Find Me On</h4>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="availability-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Availability</h2>
+            <p>I'm currently available for freelance projects, contract work, or full-time positions.</p>
+        </div>
+        
+        <div class="availability-content">
+            <div class="availability-item">
+                <div class="availability-icon">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="availability-text">
+                    <h3>DevOps Consulting</h3>
+                    <p>I offer consulting services to help organizations improve their DevOps practices, implement CI/CD pipelines, and optimize cloud infrastructure.</p>
+                </div>
+            </div>
+            
+            <div class="availability-item">
+                <div class="availability-icon">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                </div>
+                <div class="availability-text">
+                    <h3>Cloud Migration</h3>
+                    <p>I can assist with migrating applications and infrastructure to the cloud, ensuring a smooth transition with minimal disruption.</p>
+                </div>
+            </div>
+            
+            <div class="availability-item">
+                <div class="availability-icon">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="availability-text">
+                    <h3>Infrastructure Automation</h3>
+                    <p>I specialize in automating infrastructure provisioning, configuration management, and operational tasks to improve efficiency and reduce errors.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-container">
+            <a href="#" class="btn">Download Resume</a>
+            <a href="#" class="btn btn-outline">Schedule a Call</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

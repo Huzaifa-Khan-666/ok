@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="300px" viewBox="0 0 600 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Disaster Recovery Case Study</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0078FF" offset="0%"></stop>
+            <stop stop-color="#004099" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#E6EFFF" offset="0%"></stop>
+            <stop stop-color="#CCE0FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#4CAF50" offset="0%"></stop>
+            <stop stop-color="#388E3C" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="DR-Case-Study" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background -->
+        <rect id="Background" fill="#F5F7FA" x="0" y="0" width="600" height="300"></rect>
+        
+        <!-- Title -->
+        <text font-family="Arial" font-size="20" font-weight="bold" fill="#333333" x="300" y="30" text-anchor="middle">Disaster Recovery Automation Case Study</text>
+        <text font-family="Arial" font-size="14" fill="#666666" x="300" y="50" text-anchor="middle">Financial Institution</text>
+        
+        <!-- Primary Data Center -->
+        <g id="Primary-DC" transform="translate(50, 80)">
+            <rect id="DC-Box" fill="#FFFFFF" stroke="url(#linearGradient-1)" stroke-width="2" x="0" y="0" width="200" height="150" rx="5"></rect>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#333333" x="100" y="20" text-anchor="middle">Primary Data Center</text>
+            
+            <!-- Servers -->
+            <rect id="Server-1" fill="url(#linearGradient-2)" stroke="#333333" stroke-width="1" x="20" y="40" width="30" height="60" rx="2"></rect>
+            <rect id="Server-2" fill="url(#linearGradient-2)" stroke="#333333" stroke-width="1" x="60" y="40" width="30" height="60" rx="2"></rect>
+            <rect id="Server-3" fill="url(#linearGradient-2)" stroke="#333333" stroke-width="1" x="100" y="40" width="30" height="60" rx="2"></rect>
+            <rect id="Server-4" fill="url(#linearGradient-2)" stroke="#333333" stroke-width="1" x="140" y="40" width="30" height="60" rx="2"></rect>
+            
+            <!-- Server Lights -->
+            <circle id="Light-1" fill="#4CAF50" cx="35" cy="45" r="2"></circle>
+            <circle id="Light-2" fill="#4CAF50" cx="75" cy="45" r="2"></circle>
+            <circle id="Light-3" fill="#4CAF50" cx="115" cy="45" r="2"></circle>
+            <circle id="Light-4" fill="#4CAF50" cx="155" cy="45" r="2"></circle>
+            
+            <!-- Database -->
+            <g id="Database" transform="translate(70, 110)">
+                <ellipse id="DB-Top" fill="#333333" cx="30" cy="5" rx="25" ry="5"></ellipse>
+                <rect id="DB-Body" fill="#333333" x="5" y="5" width="50" height="20"></rect>
+                <ellipse id="DB-Bottom" fill="#333333" cx="30" cy="25" rx="25" ry="5"></ellipse>
+                <text font-family="Arial" font-size="10" fill="#FFFFFF" x="30" y="20" text-anchor="middle">DB</text>
+            </g>
+        </g>
+        
+        <!-- DR Replication -->
+        <g id="Replication" transform="translate(280, 130)">
+            <rect id="Repl-Box" fill="#FFFFFF" stroke="url(#linearGradient-1)" stroke-width="2" x="0" y="0" width="40" height="30" rx="5"></rect>
+            <text font-family="Arial" font-size="8" fill="url(#linearGradient-1)" x="20" y="20" text-anchor="middle">SYNC</text>
+            
+            <!-- Arrows -->
+            <path d="M-30,15 L0,15" id="Arrow-Left" stroke="url(#linearGradient-1)" stroke-width="2" stroke-linecap="round"></path>
+            <polygon fill="url(#linearGradient-1)" points="-5,11 5,15 -5,19"></polygon>
+            
+            <path d="M40,15 L70,15" id="Arrow-Right" stroke="url(#linearGradient-1)" stroke-width="2" stroke-linecap="round"></path>
+            <polygon fill="url(#linearGradient-1)" points="65,11 75,15 65,19"></polygon>
+        </g>
+        
+        <!-- DR Data Center -->
+        <g id="DR-DC" transform="translate(350, 80)">
+            <rect id="DR-Box" fill="#FFFFFF" stroke="url(#linearGradient-1)" stroke-width="2" x="0" y="0" width="200" height="150" rx="5"></rect>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#333333" x="100" y="20" text-anchor="middle">DR Data Center</text>
+            
+            <!-- Servers -->
+            <rect id="DR-Server-1" fill="url(#linearGradient-2)" stroke="#333333" stroke-width="1" x="20" y="40" width="30" height="60" rx="2"></rect>
+            <rect id="DR-Server-2" fill="url(#linearGradient-2)" stroke="#333333" stroke-width="1" x="60" y="40" width="30" height="60" rx="2"></rect>
+            <rect id="DR-Server-3" fill="url(#linearGradient-2)" stroke="#333333" stroke-width="1" x="100" y="40" width="30" height="60" rx="2"></rect>
+            <rect id="DR-Server-4" fill="url(#linearGradient-2)" stroke="#333333" stroke-width="1" x="140" y="40" width="30" height="60" rx="2"></rect>
+            
+            <!-- Server Lights -->
+            <circle id="DR-Light-1" fill="#FFEB3B" cx="35" cy="45" r="2"></circle>
+            <circle id="DR-Light-2" fill="#FFEB3B" cx="75" cy="45" r="2"></circle>
+            <circle id="DR-Light-3" fill="#FFEB3B" cx="115" cy="45" r="2"></circle>
+            <circle id="DR-Light-4" fill="#FFEB3B" cx="155" cy="45" r="2"></circle>
+            
+            <!-- Database -->
+            <g id="DR-Database" transform="translate(70, 110)">
+                <ellipse id="DR-DB-Top" fill="#333333" cx="30" cy="5" rx="25" ry="5"></ellipse>
+                <rect id="DR-DB-Body" fill="#333333" x="5" y="5" width="50" height="20"></rect>
+                <ellipse id="DR-DB-Bottom" fill="#333333" cx="30" cy="25" rx="25" ry="5"></ellipse>
+                <text font-family="Arial" font-size="10" fill="#FFFFFF" x="30" y="20" text-anchor="middle">DB</text>
+            </g>
+        </g>
+        
+        <!-- Automation Layer -->
+        <g id="Automation" transform="translate(50, 250)">
+            <rect id="Auto-Box" fill="url(#linearGradient-1)" x="0" y="0" width="500" height="30" rx="5"></rect>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#FFFFFF" x="250" y="20" text-anchor="middle">Automated DR Testing and Failover Framework</text>
+        </g>
+        
+        <!-- Metrics -->
+        <g id="Metrics" transform="translate(200, 190)">
+            <rect id="Metric-Box-1" fill="#FFFFFF" stroke="url(#linearGradient-3)" stroke-width="1" x="0" y="0" width="80" height="40" rx="5"></rect>
+            <text font-family="Arial" font-size="10" fill="#333333" x="40" y="15" text-anchor="middle">RTO</text>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="url(#linearGradient-3)" x="40" y="32" text-anchor="middle">30 min</text>
+            
+            <rect id="Metric-Box-2" fill="#FFFFFF" stroke="url(#linearGradient-3)" stroke-width="1" x="100" y="0" width="80" height="40" rx="5"></rect>
+            <text font-family="Arial" font-size="10" fill="#333333" x="140" y="15" text-anchor="middle">RPO</text>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="url(#linearGradient-3)" x="140" y="32" text-anchor="middle">< 5 min</text>
+        </g>
+        
+        <!-- Terraform -->
+        <g id="Terraform" transform="translate(30, 190)">
+            <rect id="TF-Box" fill="#FFFFFF" stroke="#5C4EE5" stroke-width="1" x="0" y="0" width="60" height="25" rx="5"></rect>
+            <text font-family="Arial" font-size="10" fill="#5C4EE5" x="30" y="17" text-anchor="middle">Terraform</text>
+        </g>
+        
+        <!-- AWS -->
+        <g id="AWS" transform="translate(100, 190)">
+            <rect id="AWS-Box" fill="#FFFFFF" stroke="#FF9900" stroke-width="1" x="0" y="0" width="60" height="25" rx="5"></rect>
+            <text font-family="Arial" font-size="10" fill="#FF9900" x="30" y="17" text-anchor="middle">AWS</text>
+        </g>
+        
+        <!-- Testing Framework -->
+        <g id="Testing" transform="translate(450, 190)">
+            <rect id="Test-Box" fill="#FFFFFF" stroke="#F44336" stroke-width="1" x="0" y="0" width="100" height="25" rx="5"></rect>
+            <text font-family="Arial" font-size="10" fill="#F44336" x="50" y="17" text-anchor="middle">Testing Framework</text>
+        </g>
+        
+        <!-- Region Labels -->
+        <rect id="Region-1" fill="#E6EFFF" x="50" y="70" width="60" height="20" rx="5"></rect>
+        <text font-family="Arial" font-size="10" fill="#333333" x="80" y="85" text-anchor="middle">US-EAST</text>
+        
+        <rect id="Region-2" fill="#E6EFFF" x="490" y="70" width="60" height="20" rx="5"></rect>
+        <text font-family="Arial" font-size="10" fill="#333333" x="520" y="85" text-anchor="middle">US-WEST</text>
+    </g>
+</svg>

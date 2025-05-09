@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>About Me</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0078FF" offset="0%"></stop>
+            <stop stop-color="#004099" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#F5F7FA" offset="0%"></stop>
+            <stop stop-color="#DCE6F2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="About-Me" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background -->
+        <rect id="Background" fill="url(#linearGradient-2)" x="0" y="0" width="600" height="400" rx="10"></rect>
+        
+        <!-- Profile -->
+        <g id="Profile" transform="translate(50, 50)">
+            <!-- Profile Circle -->
+            <circle id="Profile-Background" fill="#FFFFFF" cx="75" cy="75" r="75"></circle>
+            <circle id="Profile-Border" fill="none" stroke="url(#linearGradient-1)" stroke-width="4" cx="75" cy="75" r="75"></circle>
+            
+            <!-- Profile Person -->
+            <circle id="Head" fill="#FFD700" cx="75" cy="50" r="25"></circle>
+            <path d="M75,75 L75,125" id="Body" stroke="#333333" stroke-width="6" stroke-linecap="round"></path>
+            <path d="M75,90 L45,70" id="Arm-Left" stroke="#333333" stroke-width="4" stroke-linecap="round"></path>
+            <path d="M75,90 L105,70" id="Arm-Right" stroke="#333333" stroke-width="4" stroke-linecap="round"></path>
+            <circle id="Eye-Left" fill="#333333" cx="65" cy="45" r="3"></circle>
+            <circle id="Eye-Right" fill="#333333" cx="85" cy="45" r="3"></circle>
+            <path d="M65,60 C65,65 85,65 85,60" id="Smile" stroke="#333333" stroke-width="2" stroke-linecap="round" fill="none"></path>
+        </g>
+        
+        <!-- Experience Boxes -->
+        <g id="Experience" transform="translate(200, 50)">
+            <rect id="Experience-Box-1" fill="#FFFFFF" stroke="#0078FF" stroke-width="2" x="0" y="0" width="300" height="60" rx="5"></rect>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#0078FF" x="15" y="25">Senior DevOps Engineer</text>
+            <text font-family="Arial" font-size="12" fill="#333333" x="15" y="45">Cloud Infrastructure, CI/CD, Kubernetes</text>
+            
+            <rect id="Experience-Box-2" fill="#FFFFFF" stroke="#0078FF" stroke-width="2" x="0" y="80" width="300" height="60" rx="5"></rect>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#0078FF" x="15" y="105">DevOps Engineer</text>
+            <text font-family="Arial" font-size="12" fill="#333333" x="15" y="125">Automation, Deployment Pipelines</text>
+            
+            <rect id="Experience-Box-3" fill="#FFFFFF" stroke="#0078FF" stroke-width="2" x="0" y="160" width="300" height="60" rx="5"></rect>
+            <text font-family="Arial" font-size="14" font-weight="bold" fill="#0078FF" x="15" y="185">Systems Administrator</text>
+            <text font-family="Arial" font-size="12" fill="#333333" x="15" y="205">Infrastructure Management, Monitoring</text>
+        </g>
+        
+        <!-- Skill Bars -->
+        <g id="Skills" transform="translate(50, 250)">
+            <!-- Cloud -->
+            <text font-family="Arial" font-size="12" font-weight="bold" fill="#333333" x="0" y="15">Cloud</text>
+            <rect id="Cloud-Track" fill="#DCE6F2" x="100" y="5" width="150" height="10" rx="5"></rect>
+            <rect id="Cloud-Progress" fill="url(#linearGradient-1)" x="100" y="5" width="135" height="10" rx="5"></rect>
+            
+            <!-- CI/CD -->
+            <text font-family="Arial" font-size="12" font-weight="bold" fill="#333333" x="0" y="40">CI/CD</text>
+            <rect id="CICD-Track" fill="#DCE6F2" x="100" y="30" width="150" height="10" rx="5"></rect>
+            <rect id="CICD-Progress" fill="url(#linearGradient-1)" x="100" y="30" width="140" height="10" rx="5"></rect>
+            
+            <!-- Kubernetes -->
+            <text font-family="Arial" font-size="12" font-weight="bold" fill="#333333" x="0" y="65">Kubernetes</text>
+            <rect id="Kubernetes-Track" fill="#DCE6F2" x="100" y="55" width="150" height="10" rx="5"></rect>
+            <rect id="Kubernetes-Progress" fill="url(#linearGradient-1)" x="100" y="55" width="125" height="10" rx="5"></rect>
+            
+            <!-- IaC -->
+            <text font-family="Arial" font-size="12" font-weight="bold" fill="#333333" x="0" y="90">IaC</text>
+            <rect id="IaC-Track" fill="#DCE6F2" x="100" y="80" width="150" height="10" rx="5"></rect>
+            <rect id="IaC-Progress" fill="url(#linearGradient-1)" x="100" y="80" width="130" height="10" rx="5"></rect>
+        </g>
+        
+        <!-- Icons -->
+        <g id="Icons" transform="translate(400, 250)">
+            <!-- AWS Icon -->
+            <rect id="AWS-Background" fill="#FFFFFF" x="10" y="0" width="40" height="40" rx="5"></rect>
+            <text font-family="Arial" font-size="10" font-weight="bold" fill="#333333" x="30" y="25" text-anchor="middle">AWS</text>
+            
+            <!-- Docker Icon -->
+            <rect id="Docker-Background" fill="#FFFFFF" x="60" y="0" width="40" height="40" rx="5"></rect>
+            <text font-family="Arial" font-size="8" font-weight="bold" fill="#333333" x="80" y="25" text-anchor="middle">Docker</text>
+            
+            <!-- K8s Icon -->
+            <rect id="K8s-Background" fill="#FFFFFF" x="110" y="0" width="40" height="40" rx="5"></rect>
+            <text font-family="Arial" font-size="8" font-weight="bold" fill="#333333" x="130" y="25" text-anchor="middle">K8s</text>
+            
+            <!-- Jenkins Icon -->
+            <rect id="Jenkins-Background" fill="#FFFFFF" x="35" y="50" width="40" height="40" rx="5"></rect>
+            <text font-family="Arial" font-size="8" font-weight="bold" fill="#333333" x="55" y="75" text-anchor="middle">Jenkins</text>
+            
+            <!-- Terraform Icon -->
+            <rect id="TF-Background" fill="#FFFFFF" x="85" y="50" width="40" height="40" rx="5"></rect>
+            <text font-family="Arial" font-size="7" font-weight="bold" fill="#333333" x="105" y="75" text-anchor="middle">Terraform</text>
+        </g>
+    </g>
+</svg>

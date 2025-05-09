@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="about-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Learn more about my journey as an Ethical Hacker and Security Researcher.</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='images/about-me.svg') }}" alt="About Me">
+            </div>
+            <div class="about-text">
+                <h3>My Journey</h3>
+                <p>I am a dedicated Ethical Hacker with a passion for uncovering security vulnerabilities, conducting penetration testing, and strengthening digital defenses. With extensive experience in cybersecurity and information security, I help organizations identify and remediate security risks before malicious actors can exploit them.</p>
+                <p>My journey began as a Network Security Analyst where I built a solid foundation in information security. As cyber threats evolved, I specialized in offensive security techniques, vulnerability research, and advanced penetration testing methodologies to stay ahead of threat actors.</p>
+                <h3>Philosophy</h3>
+                <p>I believe in a proactive security approach that anticipates threats before they materialize. My methodology centers on:</p>
+                <ul>
+                    <li>Think like an attacker - understanding offensive techniques to build better defenses</li>
+                    <li>Responsible disclosure - following ethical guidelines when reporting vulnerabilities</li>
+                    <li>Continuous learning - staying updated with the latest attack vectors and security trends</li>
+                    <li>Knowledge transfer - educating organizations about security best practices</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="experience-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Experience</h2>
+            <p>My professional journey in the Cybersecurity field.</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Senior Security Researcher</h3>
+                    <h4>CyberShield Security</h4>
+                    <p class="timeline-date">2022 - Present</p>
+                    <p>Lead security assessments for Fortune 500 companies. Discovered critical vulnerabilities in banking applications. Developed custom exploitation frameworks for automated security testing.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Penetration Tester</h3>
+                    <h4>SecureNet Solutions</h4>
+                    <p class="timeline-date">2019 - 2022</p>
+                    <p>Conducted comprehensive penetration tests on web applications, networks, and cloud infrastructure. Identified and helped remediate over 200 security vulnerabilities. Specialized in API security testing.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Network Security Analyst</h3>
+                    <h4>DataGuard Systems</h4>
+                    <p class="timeline-date">2017 - 2019</p>
+                    <p>Monitored network traffic for suspicious activities. Implemented intrusion detection systems. Responded to security incidents and conducted post-breach analysis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="education-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Education & Certifications</h2>
+            <p>My academic background and professional certifications in cybersecurity.</p>
+        </div>
+        <div class="education-container">
+            <div class="education-item">
+                <div class="education-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="education-content">
+                    <h3>B.S. in Computer Science</h3>
+                    <h4>University of Technology</h4>
+                    <p class="education-date">2013 - 2017</p>
+                </div>
+            </div>
+            <div class="certification-container">
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Offensive Security Certified Professional (OSCP)</h3>
+                        <p class="certification-date">2021</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>Certified Ethical Hacker (CEH)</h3>
+                        <p class="certification-date">2020</p>
+                    </div>
+                </div>
+                <div class="certification-item">
+                    <div class="certification-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="certification-content">
+                        <h3>CompTIA Security+</h3>
+                        <p class="certification-date">2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

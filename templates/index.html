@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Ethical <span>Hacker</span></h1>
+            <p>Securing digital infrastructure through advanced penetration testing, vulnerability assessment, and offensive security expertise.</p>
+            <div class="hero-buttons">
+                <a href="{{ url_for('projects') }}" class="btn">View My Work</a>
+                <a href="{{ url_for('contact') }}" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/case-study.svg') }}" alt="Hacker Illustration">
+        </div>
+    </div>
+</section>
+
+<section class="featured-skills">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Expertise</h2>
+            <p>Specialized in advanced cybersecurity techniques, vulnerability assessment, and digital defense systems.</p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-user-secret"></i>
+                </div>
+                <h3>Penetration Testing</h3>
+                <p>Expert in identifying security vulnerabilities in web applications, networks, and infrastructure using advanced testing methodologies.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security Analysis</h3>
+                <p>Conducting comprehensive threat modeling, security audits, and implementing robust defense mechanisms for enterprises.</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Exploit Development</h3>
+                <p>Creating and analyzing security exploits, reverse engineering, and developing secure coding practices to prevent attacks.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="featured-projects">
+    <div class="container">
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+            <p>Recent cyber security assessments and penetration testing engagements (declassified for public disclosure).</p>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{{ url_for('static', filename='images/project1.svg') }}" alt="Network Security Project">
+                </div>
+                <div class="project-content">
+                    <h3>Banking Sector Security Audit</h3>
+                    <p>Comprehensive penetration testing and security assessment for a major financial institution's infrastructure.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Network Security</span>
+                        <span class="project-tag">API Testing</span>
+                        <span class="project-tag">OWASP Top 10</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="{{ url_for('static', filename='images/case-study.svg') }}" alt="Web Application Security">
+                </div>
+                <div class="project-content">
+                    <h3>E-commerce Platform Hardening</h3>
+                    <p>Identified and remediated critical vulnerabilities in a high-traffic e-commerce application's payment processing system.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Web Security</span>
+                        <span class="project-tag">Payment Systems</span>
+                        <span class="project-tag">Encryption</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#"><i class="fas fa-external-link-alt"></i> Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-container">
+            <a href="{{ url_for('projects') }}" class="btn">View All Projects</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
